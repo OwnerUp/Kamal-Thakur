@@ -1,0 +1,116 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#0a0f14;
+color:white;
+overflow:hidden;
+}
+
+/* silver premium background */
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 25% 30%, rgba(200,200,200,.18), transparent 40%),
+radial-gradient(circle at 75% 70%, rgba(120,170,220,.18), transparent 40%),
+linear-gradient(160deg,#0a0f14,#131c26,#0a0f14);
+z-index:-1;
+}
+
+.card{
+width:420px;
+max-width:92vw;
+padding:46px 32px;
+border-radius:26px;
+background:rgba(12,18,24,.96);
+text-align:center;
+box-shadow:0 40px 120px rgba(0,0,0,.7);
+border:1px solid rgba(220,220,220,.18);
+}
+
+/* silver ring */
+.avatar-wrap{
+width:150px;height:150px;
+margin:0 auto 18px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#e0e0e0,#9aa7b5,#ffffff);
+padding:5px;
+box-shadow:0 0 35px rgba(200,200,200,.5);
+animation:pop 1.9s infinite ease-in-out;
+}
+
+@keyframes pop{
+0%{transform:scale(1)}
+35%{transform:scale(1.06)}
+55%{transform:scale(0.98)}
+75%{transform:scale(1.04)}
+100%{transform:scale(1)}
+}
+
+.avatar{
+width:130px;height:130px;
+border-radius:50%;
+object-fit:cover;
+background:#000;
+}
+
+/* silver gradient text */
+h1{
+font-size:28px;
+font-weight:700;
+background:linear-gradient(90deg,#ffffff,#cfd8e3,#9aa7b5);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:6px;
+}
+
+.subtitle{
+opacity:.85;
+margin-bottom:24px;
+font-size:14px;
+color:#d7e0ea;
+}
+
+.timer{
+font-size:52px;
+font-weight:700;
+color:#dfe6ee;
+margin:10px 0;
+}
+
+.small{
+opacity:.7;
+margin-bottom:22px;
+}
+
+/* silver CTA */
+.cta{
+display:inline-block;
+background:linear-gradient(135deg,#dfe6ee,#9aa7b5);
+padding:16px 38px;
+border-radius:30px;
+text-decoration:none;
+font-weight:700;
+color:#0a0f14;
+margin-bottom:20px;
+box-shadow:0 15px 40px rgba(150,170,190,.35);
+transition:.25s;
+}
+
+.cta:hover{
+transform:translateY(-2px);
+box-shadow:0 25px 60px rgba(150,170,190,.5);
+}
+
+.tagline{
+opacity:.85;
+font-size:14px;
+color:#cbd5df;
+}
